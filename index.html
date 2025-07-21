@@ -12,21 +12,28 @@
       padding: 50px;
       margin: 0;
     }
+
+    /* Styling logo */
     img.logo {
-      width: 350px; /* Logo dibesarkan */
-      margin-bottom: 20px;
+      display: block;
+      margin: 0 auto 20px;
+      width: 400px;
+      height: auto;
     }
+
     h1 {
       font-size: 2.5em;
       color: #000;
       margin-bottom: 0.2em;
     }
+
     p {
       font-size: 1.2em;
       color: #333;
       margin-top: 0;
       margin-bottom: 30px;
     }
+
     a {
       display: block;
       margin: 10px auto;
@@ -40,9 +47,12 @@
       font-size: 1em;
       transition: background-color 0.3s ease;
     }
+
     a:hover {
       background-color: #444;
     }
+
+    /* Instagram feed */
     iframe.lightwidget-widget {
       width: 100%;
       max-width: 400px;
@@ -54,18 +64,23 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+
+    /* Sembunyikan iklan / branding LightWidget */
+    .lightwidget-widget + a {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
-  <!-- LOGO -->
-  <img src="SOURHIVE404-01.png" alt="Sourhive Logo" style="width: 400px; height: auto; margin-bottom: 20px;">
 
+  <!-- LOGO -->
+  <img src="SOURHIVE404-01.png" alt="Sourhive Logo" class="logo" />
 
   <!-- HEADING -->
   <h1>Sourhive Clothing</h1>
   <p>Temukan gaya streetwear terbaik</p>
 
-  <!-- Embed Instagram Feed (jika punya LightWidget) -->
+  <!-- Embed Instagram Feed -->
   <iframe
     src="https://lightwidget.com/widgets/your-widget-code.html"
     scrolling="no"
@@ -77,5 +92,6 @@
   <a href="https://instagram.com/sourhive404" target="_blank">Instagram</a>
   <a href="https://wa.me/6282235526583" target="_blank">WhatsApp</a>
   <a href="https://shopee.co.id/sourhive" target="_blank">Shopee</a>
+
 </body>
 </html>
