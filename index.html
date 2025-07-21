@@ -1,36 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sourhive Clothing</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
       background-color: #f7f7f7;
-      padding: 50px;
+      padding: 40px 20px;
+      margin: 0;
     }
     h1 {
-      font-size: 2.5em;
-      color: #000;
+      font-size: 2.8em;
+      color: #222;
+      margin-bottom: 0.2em;
     }
-    a {
-      display: block;
-      margin: 10px auto;
-      padding: 12px 20px;
-      width: 200px;
-      text-decoration: none;
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 10px 20px;
+      padding: 14px 28px;
       background-color: #000;
       color: #fff;
-      border-radius: 5px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      width: 220px;
+    }
+    .btn:hover {
+      background-color: #444;
+    }
+    iframe.lightwidget-widget {
+      width: 100%;
+      max-width: 400px;
+      height: 400px;
+      border: none;
+      overflow: hidden;
+      margin: 0 auto 30px;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
   </style>
 </head>
 <body>
   <h1>Sourhive Clothing</h1>
   <p>Temukan gaya streetwear terbaik</p>
-  <a href="https://instagram.com/sourhive" target="_blank">Instagram</a>
-  <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
-  <a href="https://shopee.co.id/sourhive" target="_blank">Shopee</a>
+
+  <!-- Embed Instagram Feed LightWidget -->
+  <iframe
+    src="https://lightwidget.com/widgets/your-widget-code.html"
+    scrolling="no"
+    allowtransparency="true"
+    class="lightwidget-widget"
+  ></iframe>
+
+  <!-- Link Buttons -->
+  <a href="https://instagram.com/sourhive404" target="_blank" class="btn">Instagram</a>
+  <a href="https://wa.me/6282235526583" target="_blank" class="btn">WhatsApp</a>
+  <a href="https://shopee.co.id/sourhive" target="_blank" class="btn">Shopee</a>
 </body>
 </html>
